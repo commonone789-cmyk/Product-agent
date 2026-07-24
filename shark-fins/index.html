@@ -49,9 +49,9 @@
 <main>
 
   <section id="intro" class="section">
-    <h2>What Are Shark Fins?</h2>
+    <h2 class="reveal">What Are Shark Fins?</h2>
     <div class="intro-grid">
-      <p>
+      <p class="reveal">
         Sharks have several rigid fins along their bodies. Unlike the soft, flexible fins of many
         bony fish, shark fins are stiffened by <strong>ceratotrichia</strong> — thin, elastic fibers
         made of protein — which keep the fin shape steady while the shark swims. Each fin has a
@@ -63,94 +63,109 @@
   </section>
 
   <section id="fin-types" class="section alt">
-    <h2>The 5 Main Types of Fins</h2>
-    <p class="section-sub">Click through the cards below — the highlighted (orange) fin on each diagram shows where that fin sits on the shark's body.</p>
+    <h2 class="reveal">The 5 Main Types of Fins</h2>
+    <p class="section-sub reveal">The highlighted (orange) fin on each diagram shows where that fin sits on the shark's body.</p>
+    <p class="swipe-hint reveal" id="swipeHint"><span class="swipe-hand">👉</span> Swipe or drag to explore each fin</p>
 
-    <div class="fin-grid">
+    <div class="carousel-wrap reveal">
+      <button type="button" class="carousel-arrow prev" id="finPrev" aria-label="Previous fin">‹</button>
 
-      <article class="fin-card">
-        <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-          <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
-          <circle class="eye" cx="95" cy="95" r="6"/>
-          <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
-          <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
-          <path class="fin-shape highlight" d="M180,62 L218,8 L248,66 Z"/>
-          <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
-          <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
-          <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
-        </svg>
-        <h3>Dorsal Fin</h3>
-        <p>The tall fin on the shark's back — the one you often see slicing above the water. It acts like a keel, keeping the shark stable and preventing it from rolling side to side while it swims.</p>
-      </article>
+      <div class="fin-carousel" id="finCarousel">
 
-      <article class="fin-card">
-        <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-          <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
-          <circle class="eye" cx="95" cy="95" r="6"/>
-          <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
-          <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
-          <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
-          <path class="fin-shape highlight" d="M95,148 L70,195 L150,165 Z"/>
-          <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
-          <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
-        </svg>
-        <h3>Pectoral Fins</h3>
-        <p>A pair of fins near the head, one on each side. They work like airplane wings, creating lift so the shark doesn't sink, and they help it steer up, down, and side to side.</p>
-      </article>
+        <article class="fin-card">
+          <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
+            <circle class="eye" cx="95" cy="95" r="6"/>
+            <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
+            <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
+            <path class="fin-shape highlight" d="M180,62 L218,8 L248,66 Z"/>
+            <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
+            <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
+            <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
+          </svg>
+          <h3>Dorsal Fin</h3>
+          <p>The tall fin on the shark's back — the one you often see slicing above the water. It acts like a keel, keeping the shark stable and preventing it from rolling side to side while it swims.</p>
+        </article>
 
-      <article class="fin-card">
-        <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-          <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
-          <circle class="eye" cx="95" cy="95" r="6"/>
-          <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
-          <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
-          <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
-          <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
-          <path class="fin-shape highlight" d="M195,158 L185,188 L225,168 Z"/>
-          <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
-        </svg>
-        <h3>Pelvic Fins</h3>
-        <p>A smaller pair of fins on the underside, further back than the pectoral fins. They add extra stability and balance, and in male sharks are modified into claspers used for reproduction.</p>
-      </article>
+        <article class="fin-card">
+          <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
+            <circle class="eye" cx="95" cy="95" r="6"/>
+            <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
+            <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
+            <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
+            <path class="fin-shape highlight" d="M95,148 L70,195 L150,165 Z"/>
+            <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
+            <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
+          </svg>
+          <h3>Pectoral Fins</h3>
+          <p>A pair of fins near the head, one on each side. They work like airplane wings, creating lift so the shark doesn't sink, and they help it steer up, down, and side to side.</p>
+        </article>
 
-      <article class="fin-card">
-        <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-          <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
-          <circle class="eye" cx="95" cy="95" r="6"/>
-          <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
-          <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
-          <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
-          <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
-          <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
-          <path class="fin-shape highlight" d="M262,152 L255,175 L285,158 Z"/>
-        </svg>
-        <h3>Anal Fin</h3>
-        <p>A single small fin on the underside, just in front of the tail (not all sharks have one). Like the dorsal fin, it helps stop the shark from rolling and keeps it swimming in a straight line.</p>
-      </article>
+        <article class="fin-card">
+          <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
+            <circle class="eye" cx="95" cy="95" r="6"/>
+            <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
+            <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
+            <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
+            <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
+            <path class="fin-shape highlight" d="M195,158 L185,188 L225,168 Z"/>
+            <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
+          </svg>
+          <h3>Pelvic Fins</h3>
+          <p>A smaller pair of fins on the underside, further back than the pectoral fins. They add extra stability and balance, and in male sharks are modified into claspers used for reproduction.</p>
+        </article>
 
-      <article class="fin-card">
-        <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-          <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
-          <circle class="eye" cx="95" cy="95" r="6"/>
-          <path class="fin-shape highlight" d="M330,102 L388,28 L358,98 Z"/>
-          <path class="fin-shape highlight" d="M330,118 L376,178 L356,102 Z"/>
-          <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
-          <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
-          <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
-          <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
-        </svg>
-        <h3>Caudal Fin (Tail)</h3>
-        <p>The tail fin is the shark's engine — powerful side-to-side sweeps push the shark forward. Most sharks have a "heterocercal" tail, meaning the top lobe is longer than the bottom lobe.</p>
-      </article>
+        <article class="fin-card">
+          <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
+            <circle class="eye" cx="95" cy="95" r="6"/>
+            <path class="fin-shape" d="M330,102 L388,28 L358,98 Z"/>
+            <path class="fin-shape" d="M330,118 L376,178 L356,102 Z"/>
+            <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
+            <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
+            <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
+            <path class="fin-shape highlight" d="M262,152 L255,175 L285,158 Z"/>
+          </svg>
+          <h3>Anal Fin</h3>
+          <p>A single small fin on the underside, just in front of the tail (not all sharks have one). Like the dorsal fin, it helps stop the shark from rolling and keeps it swimming in a straight line.</p>
+        </article>
 
+        <article class="fin-card">
+          <svg class="fin-icon" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <path class="body-fill" d="M20,110 C25,85 55,68 100,60 C150,52 220,52 270,62 C305,69 330,85 335,105 C338,108 338,112 335,115 C330,135 305,151 270,158 C220,168 150,168 100,160 C55,152 25,135 20,110 Z"/>
+            <circle class="eye" cx="95" cy="95" r="6"/>
+            <path class="fin-shape highlight" d="M330,102 L388,28 L358,98 Z"/>
+            <path class="fin-shape highlight" d="M330,118 L376,178 L356,102 Z"/>
+            <path class="fin-shape" d="M180,62 L218,8 L248,66 Z"/>
+            <path class="fin-shape" d="M95,148 L70,195 L150,165 Z"/>
+            <path class="fin-shape" d="M195,158 L185,188 L225,168 Z"/>
+            <path class="fin-shape" d="M262,152 L255,175 L285,158 Z"/>
+          </svg>
+          <h3>Caudal Fin (Tail)</h3>
+          <p>The tail fin is the shark's engine — powerful side-to-side sweeps push the shark forward. Most sharks have a "heterocercal" tail, meaning the top lobe is longer than the bottom lobe.</p>
+        </article>
+
+      </div>
+
+      <button type="button" class="carousel-arrow next" id="finNext" aria-label="Next fin">›</button>
+    </div>
+
+    <div class="carousel-dots" id="finDots">
+      <button class="dot active" data-index="0" aria-label="Go to fin 1"></button>
+      <button class="dot" data-index="1" aria-label="Go to fin 2"></button>
+      <button class="dot" data-index="2" aria-label="Go to fin 3"></button>
+      <button class="dot" data-index="3" aria-label="Go to fin 4"></button>
+      <button class="dot" data-index="4" aria-label="Go to fin 5"></button>
     </div>
   </section>
 
   <section id="anatomy" class="section">
-    <h2>Full Anatomy Diagram</h2>
-    <p class="section-sub">Click the diagram to zoom in for a closer look.</p>
+    <h2 class="reveal">Full Anatomy Diagram</h2>
+    <p class="section-sub reveal">Click the diagram to zoom, then scroll/pinch to zoom further and drag to pan around.</p>
 
-    <button type="button" class="zoomable" id="anatomyZoom" aria-label="Click to zoom the shark fin anatomy diagram">
+    <button type="button" class="zoomable reveal" id="anatomyZoom" aria-label="Click to zoom the shark fin anatomy diagram">
       <svg class="anatomy-svg" viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg">
         <path class="body-fill" d="M60,210 C68,175 110,148 150,140 C220,126 330,126 400,142 C450,153 470,175 475,205 C478,209 478,212 475,215 C470,245 450,267 400,278 C330,294 220,294 150,280 C110,272 68,245 60,210 Z"/>
         <circle class="eye" cx="145" cy="175" r="9"/>
@@ -185,21 +200,21 @@
   </section>
 
   <section id="facts" class="section alt">
-    <h2>Fun Facts About Shark Fins</h2>
+    <h2 class="reveal">Fun Facts About Shark Fins</h2>
     <ul class="facts-list">
-      <li><span class="fact-icon">🦴</span>Shark fins are stiffened by fibers called ceratotrichia, not bone — sharks have a skeleton made of cartilage, not bone.</li>
-      <li><span class="fact-icon">📈</span>The dorsal fin is often the only part of a shark visible above the water's surface.</li>
-      <li><span class="fact-icon">🌀</span>A shark's tail is called "heterocercal," meaning the upper lobe is longer than the lower lobe — unlike the symmetrical tails of most bony fish.</li>
-      <li><span class="fact-icon">✈️</span>Pectoral fins work like airplane wings, using water flow to generate lift and keep a shark from sinking.</li>
-      <li><span class="fact-icon">♂️</span>In male sharks, the pelvic fins include claspers, specialized structures used during reproduction.</li>
-      <li><span class="fact-icon">🐟</span>Not every shark species has an anal fin — its presence or absence helps scientists classify different shark species.</li>
+      <li class="reveal"><span class="fact-icon">🦴</span>Shark fins are stiffened by fibers called ceratotrichia, not bone — sharks have a skeleton made of cartilage, not bone.</li>
+      <li class="reveal"><span class="fact-icon">📈</span>The dorsal fin is often the only part of a shark visible above the water's surface.</li>
+      <li class="reveal"><span class="fact-icon">🌀</span>A shark's tail is called "heterocercal," meaning the upper lobe is longer than the lower lobe — unlike the symmetrical tails of most bony fish.</li>
+      <li class="reveal"><span class="fact-icon">✈️</span>Pectoral fins work like airplane wings, using water flow to generate lift and keep a shark from sinking.</li>
+      <li class="reveal"><span class="fact-icon">♂️</span>In male sharks, the pelvic fins include claspers, specialized structures used during reproduction.</li>
+      <li class="reveal"><span class="fact-icon">🐟</span>Not every shark species has an anal fin — its presence or absence helps scientists classify different shark species.</li>
     </ul>
   </section>
 
   <section id="sources" class="section">
-    <h2>Sources</h2>
-    <p class="section-sub">Reputable organizations to reference for this project — add the specific page URL and access date you used for each.</p>
-    <ul class="sources-list">
+    <h2 class="reveal">Sources</h2>
+    <p class="section-sub reveal">Reputable organizations to reference for this project — add the specific page URL and access date you used for each.</p>
+    <ul class="sources-list reveal">
       <li>NOAA Fisheries — Office of Protected Resources, Shark Research (fisheries.noaa.gov)</li>
       <li>Smithsonian Ocean — National Museum of Natural History (ocean.si.edu)</li>
       <li>Florida Museum of Natural History — Shark Research Program (floridamuseum.ufl.edu)</li>
@@ -215,7 +230,10 @@
 
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close zoomed image">✕</button>
-  <div class="lightbox-content" id="lightboxContent"></div>
+  <p class="lightbox-hint">🔍 Scroll or pinch to zoom · drag to pan · double-click to reset</p>
+  <div class="lightbox-stage" id="lightboxStage">
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
 </div>
 
 <script src="script.js"></script>
